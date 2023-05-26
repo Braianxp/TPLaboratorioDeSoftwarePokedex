@@ -11,6 +11,12 @@ namespace _03_Infraestructura
     public class PokemonRepositorioEnMemoria : PokemonRepositorio
     {
         private List<Pokemon> pokemones = new List<Pokemon>();
+
+        public List<Pokemon> ObtenerPokemones()
+        {
+            return pokemones;
+        }
+
         public void Registrar(Pokemon pokemon)
         {
             this.pokemones.Add(pokemon);

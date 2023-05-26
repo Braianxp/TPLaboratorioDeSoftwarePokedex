@@ -11,5 +11,7 @@ namespace _02_Dominio.Repositorio
     {
         public void Registrar(Pokemon pokemon);
 
+        public List<Pokemon> ObtenerPokemones();
+
     }
 }
