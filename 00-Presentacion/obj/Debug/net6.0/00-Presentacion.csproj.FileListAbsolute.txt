@@ -13,3 +13,10 @@ C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\o
 C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.pdb
 C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.genruntimeconfig.cache
 C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\ref\00-Presentacion.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\01-Aplicacion.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\02-Dominio.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\03-Infraestructura.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\01-Aplicacion.pdb
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\02-Dominio.pdb
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\03-Infraestructura.pdb
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.csproj.CopyComplete

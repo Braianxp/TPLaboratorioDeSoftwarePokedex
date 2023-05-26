@@ -1,0 +1,15 @@
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\bin\Debug\net6.0\01-Aplicacion.deps.json
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\bin\Debug\net6.0\01-Aplicacion.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\bin\Debug\net6.0\01-Aplicacion.pdb
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\bin\Debug\net6.0\02-Dominio.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\bin\Debug\net6.0\02-Dominio.pdb
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\01-Aplicacion.csproj.AssemblyReference.cache
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\01-Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\01-Aplicacion.AssemblyInfoInputs.cache
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\01-Aplicacion.AssemblyInfo.cs
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\01-Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\01-Aplicacion.csproj.CopyComplete
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\01-Aplicacion.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\refint\01-Aplicacion.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\01-Aplicacion.pdb
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\01-Aplicacion\obj\Debug\net6.0\ref\01-Aplicacion.dll

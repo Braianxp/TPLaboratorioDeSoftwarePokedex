@@ -1,0 +1,12 @@
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\bin\Debug\net6.0\02-Dominio.deps.json
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\bin\Debug\net6.0\02-Dominio.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\bin\Debug\net6.0\02-Dominio.pdb
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\02-Dominio.csproj.AssemblyReference.cache
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\02-Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\02-Dominio.AssemblyInfoInputs.cache
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\02-Dominio.AssemblyInfo.cs
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\02-Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\02-Dominio.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\refint\02-Dominio.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\02-Dominio.pdb
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\02-Dominio\obj\Debug\net6.0\ref\02-Dominio.dll

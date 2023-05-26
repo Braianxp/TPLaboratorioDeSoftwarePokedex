@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTO\" />
+    <ProjectReference Include="..\02-Dominio\02-Dominio.csproj" />
   </ItemGroup>
 
 </Project>

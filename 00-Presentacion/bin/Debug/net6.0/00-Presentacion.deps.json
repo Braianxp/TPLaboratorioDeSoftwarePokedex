@@ -7,14 +7,55 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "00-Presentacion/1.0.0": {
+        "dependencies": {
+          "01-Aplicacion": "1.0.0",
+          "02-Dominio": "1.0.0",
+          "03-Infraestructura": "1.0.0"
+        },
         "runtime": {
           "00-Presentacion.dll": {}
+        }
+      },
+      "01-Aplicacion/1.0.0": {
+        "dependencies": {
+          "02-Dominio": "1.0.0"
+        },
+        "runtime": {
+          "01-Aplicacion.dll": {}
+        }
+      },
+      "02-Dominio/1.0.0": {
+        "runtime": {
+          "02-Dominio.dll": {}
+        }
+      },
+      "03-Infraestructura/1.0.0": {
+        "dependencies": {
+          "02-Dominio": "1.0.0"
+        },
+        "runtime": {
+          "03-Infraestructura.dll": {}
         }
       }
     }
   },
   "libraries": {
     "00-Presentacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "01-Aplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "02-Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "03-Infraestructura/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
