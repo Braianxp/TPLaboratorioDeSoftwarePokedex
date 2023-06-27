@@ -1,9 +1,11 @@
-﻿using _01_Aplicacion;
+﻿using _00_Presentacion;
+using _01_Aplicacion;
 using _01_Aplicacion.DTO;
 using _02_Dominio.Repositorio;
 using _03_Infraestructura;
+using System.Linq.Expressions;
 
-PokemonDTO pokemon1 = new PokemonDTO(
+/*PokemonDTO pokemon1 = new PokemonDTO(
 Guid.NewGuid(),
 "Squirtle",
 0007,
@@ -28,14 +30,33 @@ Guid.NewGuid(),
 "Fuego",
 "Charmeleon",
 "Lanzallamas"
-);
+);*/
 
 PokemonRepositorio repositorio = new PokemonRepositorioEnMemoria();
 CrearPokemon creadorDePokemons = new CrearPokemon(repositorio);
 ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
 
+UI ui = new UiAscii();
+char opcion;
 
-creadorDePokemons.ejecutar(pokemon1);
+do 
+{
+  opcion  = ui.Menu();
+  switch (opcion)
+  {
+    case '1':
+        ui.RegistrarPokemon();
+        break;
+
+    default:
+        ui.Menu();
+        break;
+
+   }
+
+} while(opcion != '0');
+
+/*creadorDePokemons.ejecutar(pokemon1);
 creadorDePokemons.ejecutar(pokemon2);
 creadorDePokemons.ejecutar(pokemon3);
 
@@ -43,4 +64,4 @@ List<PokemonDTO> pokemones = obtenerPokemones.Ejecutar();
 foreach(PokemonDTO pokemon in pokemones)
 {
     Console.WriteLine(pokemon.Describirse());
-}
+}*/
