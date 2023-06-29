@@ -21,5 +21,10 @@ namespace _03_Infraestructura
         {
             this.pokemones.Add(pokemon);
         }
+
+        public void Actualizar(Pokemon pokemon)
+        {
+            this.pokemones.Add(pokemon);
+        }
     }
 }

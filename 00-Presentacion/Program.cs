@@ -30,14 +30,26 @@ Guid.NewGuid(),
 "Lanzallamas"
 );
 
+PokemonDTO pokemon4 = new PokemonDTO(
+Guid.NewGuid(),
+"Pikachu",
+0025,
+"Electrico",
+"Raychu",
+"Impact trueno"
+);
+
 PokemonRepositorio repositorio = new PokemonRepositorioEnMemoria();
 CrearPokemon creadorDePokemons = new CrearPokemon(repositorio);
 ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
+ModificarPokemon modificarPokemon = new ModificarPokemon(repositorio);
 
 
 creadorDePokemons.ejecutar(pokemon1);
 creadorDePokemons.ejecutar(pokemon2);
 creadorDePokemons.ejecutar(pokemon3);
+creadorDePokemons.ejecutar(pokemon4);
+
 
 List<PokemonDTO> pokemones = obtenerPokemones.Ejecutar();
 foreach(PokemonDTO pokemon in pokemones)

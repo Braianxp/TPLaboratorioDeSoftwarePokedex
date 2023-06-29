@@ -13,5 +13,6 @@ namespace _02_Dominio.Repositorio
 
         public List<Pokemon> ObtenerPokemones();
 
+        public void Actualizar(Pokemon pokemon);
     }
 }

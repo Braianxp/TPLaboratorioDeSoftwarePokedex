@@ -13,7 +13,7 @@ namespace _01_Aplicacion
     {
         PokemonRepositorio repositorio;
 
-        public ObtenerPokemones( PokemonRepositorio repositorio)
+        public ObtenerPokemones(PokemonRepositorio repositorio)
         {
             this.repositorio = repositorio;
         }

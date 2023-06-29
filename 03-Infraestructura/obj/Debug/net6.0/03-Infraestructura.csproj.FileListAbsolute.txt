@@ -13,3 +13,18 @@ C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\03-Infraestructur
 C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\refint\03-Infraestructura.dll
 C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.pdb
 C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\ref\03-Infraestructura.dll
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\bin\Debug\net6.0\03-Infraestructura.deps.json
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\bin\Debug\net6.0\03-Infraestructura.dll
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\bin\Debug\net6.0\03-Infraestructura.pdb
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\bin\Debug\net6.0\02-Dominio.dll
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\bin\Debug\net6.0\02-Dominio.pdb
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.csproj.AssemblyReference.cache
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.AssemblyInfoInputs.cache
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.AssemblyInfo.cs
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.csproj.CopyComplete
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.dll
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\refint\03-Infraestructura.dll
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\03-Infraestructura.pdb
+C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\03-Infraestructura\obj\Debug\net6.0\ref\03-Infraestructura.dll
