@@ -33,7 +33,7 @@ Guid.NewGuid(),
 PokemonRepositorio repositorio = new PokemonRepositorioEnMemoria();
 CrearPokemon creadorDePokemons = new CrearPokemon(repositorio);
 ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
-
+BuscarPokemon buscarPokemon = new BuscarPokemon(repositorio);
 
 creadorDePokemons.ejecutar(pokemon1);
 creadorDePokemons.ejecutar(pokemon2);
@@ -44,3 +44,7 @@ foreach(PokemonDTO pokemon in pokemones)
 {
     Console.WriteLine(pokemon.Describirse());
 }
+
+
+PokemonDTO pokemonDTO = buscarPokemon.Ejecutar(1);
+Console.WriteLine(pokemonDTO.Describirse());

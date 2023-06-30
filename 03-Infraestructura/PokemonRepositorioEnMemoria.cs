@@ -21,5 +21,26 @@ namespace _03_Infraestructura
         {
             this.pokemones.Add(pokemon);
         }
+
+        public Pokemon ObtenerPokemonesOrden(int orden)
+        {
+            Pokemon pokemon = null;
+
+            for (int i = 0; i < pokemones.Count; i++)
+            {
+                if (orden == pokemones[i].Orden())
+                {
+                    pokemon = pokemones[i];
+                }
+
+            }
+            if (pokemon == null)
+            {
+                throw new Exception("El pokemon no existe");
+            }
+
+            return pokemon;
+        }
+        
     }
 }
