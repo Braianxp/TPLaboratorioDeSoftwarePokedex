@@ -4,4 +4,4 @@
 * Crear un pokemon
 * Modificar pokemon
 * Eliminar pokemon
-* 
+* Consultar pokemon
