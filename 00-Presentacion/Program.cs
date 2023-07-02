@@ -1,5 +1,6 @@
 ﻿using _01_Aplicacion;
 using _01_Aplicacion.DTO;
+using _02_Dominio.Entidad;
 using _02_Dominio.Repositorio;
 using _03_Infraestructura;
 
@@ -30,10 +31,13 @@ Guid.NewGuid(),
 "Lanzallamas"
 );
 
+
+
 PokemonRepositorio repositorio = new PokemonRepositorioEnMemoria();
 CrearPokemon creadorDePokemons = new CrearPokemon(repositorio);
 ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
 BuscarPokemon buscarPokemon = new BuscarPokemon(repositorio);
+ModificarPokemon modificarpokemon = new ModificarPokemon(repositorio);
 
 creadorDePokemons.ejecutar(pokemon1);
 creadorDePokemons.ejecutar(pokemon2);
@@ -47,4 +51,20 @@ foreach(PokemonDTO pokemon in pokemones)
 
 
 PokemonDTO pokemonDTO = buscarPokemon.Ejecutar(1);
-Console.WriteLine(pokemonDTO.Describirse());
+
+PokemonDTO pokemon4 = new PokemonDTO(
+pokemonDTO.Id(),
+"Pikachu",
+0025,
+"Electrico",
+"Raychu",
+"Impact trueno"
+);
+
+modificarpokemon.Ejecutar(pokemon4);
+Console.WriteLine("-");
+pokemones = obtenerPokemones.Ejecutar();
+foreach (PokemonDTO pokemon in pokemones)
+{
+    Console.WriteLine(pokemon.Describirse());
+}

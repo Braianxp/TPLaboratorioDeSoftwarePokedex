@@ -1,5 +1,6 @@
 ﻿using _02_Dominio.Entidad;
 using _02_Dominio.Repositorio;
+using _02_Dominio.ValueObject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,24 @@ namespace _03_Infraestructura
             }
 
             return pokemon;
+        }
+
+        public void Modificar(Pokemon pokemon)
+        {
+
+            for (int i = 0; i < pokemones.Count; i++)
+            {
+                if (pokemon.Id() == pokemones[i].Id())
+                {
+                    pokemones[i] = pokemon;
+                }
+
+            }
+            if (pokemon == null)
+            {
+                throw new Exception("El pokemon no existe");
+            }
+
         }
         
     }
