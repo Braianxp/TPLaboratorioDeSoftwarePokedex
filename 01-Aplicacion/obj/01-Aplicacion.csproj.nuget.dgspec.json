@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj": {}
+    "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj": {
+    "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj",
         "projectName": "01-Aplicacion",
-        "projectPath": "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj",
-        "packagesPath": "C:\\Users\\javy_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\01-Aplicacion\\obj\\",
+        "projectPath": "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\Braian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\javy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Braian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
-                "projectPath": "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj"
+              "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
+                "projectPath": "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj"
               }
             }
           }
@@ -63,17 +67,21 @@
         }
       }
     },
-    "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
+    "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj",
         "projectName": "02-Dominio",
-        "projectPath": "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj",
-        "packagesPath": "C:\\Users\\javy_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\javy_\\OneDrive\\Documents\\Proyectos de visual\\Proyecto1\\LaboratorioDeSoftwarePokedex\\02-Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj",
+        "packagesPath": "C:\\Users\\Braian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\javy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Braian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -24,11 +24,18 @@ namespace _01_Aplicacion
             List<EntrenadorDTO> entrenadoresDTO = new List<EntrenadorDTO>();
             foreach (Entrenador entrenador in entrenadores)
             {
-                EntrenadorDTO entrenadorDTO= new EntrenadorDTO(entrenador.Id(), entrenador.Nombre(), entrenador.Origen(), entrenador.Lider(), entrenador.Medallas(), entrenador.PokemonesAtrapados());
+                List<Pokemon> pokemones = entrenador.PokemonesAtrapados();
+                List<PokemonDTO> pokemonesDTO = new List<PokemonDTO>();
+                for (int i = 0; i < pokemones.Count; i++)
+                {
+                    PokemonDTO pokemonDTO = new PokemonDTO(pokemones[i].Id(), pokemones[i].Nombre(), pokemones[i].Orden(), pokemones[i].Tipo(), pokemones[i].Evolucion(), pokemones[i].Habilidad());
+                    pokemonesDTO.Add(pokemonDTO);
+                }
+                EntrenadorDTO entrenadorDTO= new EntrenadorDTO(entrenador.Id(), entrenador.Nombre(), entrenador.Origen(), entrenador.Lider(), entrenador.Medallas(), pokemonesDTO);
                 entrenadoresDTO.Add(entrenadorDTO);
             }
             return entrenadoresDTO;
         }
     }
 }
-}
+

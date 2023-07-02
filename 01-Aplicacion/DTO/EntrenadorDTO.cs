@@ -50,12 +50,30 @@ namespace _01_Aplicacion.DTO
             return this.medallas;
         }
 
-        public List<PokemonDTO> PokemonesAtrapados()
+        public List<PokemonDTO>PokemonesAtrapados()
         {
             return this.pokemonesAtrapados;
         }
         public String Describirse()
         {
-            return "*Entrenador:" + this.nombre + " *Origen:" + this.origen + " *Lider de gimnasio:" + this.liderDeGimnasio + " *Medallas " + this.medallas + " *Sus pokemones son " + this.pokemonesAtrapados;
+            string stringPokemones = "";
+            string stringLiderDeGimnasio = "";
+
+            foreach (var pokemon in this.pokemonesAtrapados)
+            {
+                stringPokemones = stringPokemones + " +" + pokemon.Nombre();
+            }
+
+            if (liderDeGimnasio == false)
+            {
+                stringLiderDeGimnasio = "NO";
+            }
+            else
+            {
+                stringLiderDeGimnasio = "SI";
+            }
+
+            return "*Entrenador:" + this.nombre + " *Origen:" + this.origen + " *Lider de gimnasio:" + stringLiderDeGimnasio + " *Medallas: " + this.medallas + " *Sus pokemones son:" + stringPokemones;
+        }
     }
 }

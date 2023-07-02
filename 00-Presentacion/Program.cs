@@ -35,6 +35,7 @@ Guid.NewGuid(),
 
 
 
+
 PokemonRepositorio repositorio = new PokemonRepositorioEnMemoria();
 CrearPokemon creadorDePokemons = new CrearPokemon(repositorio);
 ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
@@ -42,10 +43,16 @@ BuscarPokemon buscarPokemon = new BuscarPokemon(repositorio);
 ModificarPokemon modificarpokemon = new ModificarPokemon(repositorio);
 EliminarPokemon eliminarpokemon = new EliminarPokemon(repositorio);
 
+EntrenadorRepositorio repositorioEntre = new EntrenadorRepositorioEnMemoria();
+CrearEntrenador crearEntrenador = new CrearEntrenador(repositorioEntre);
+ObtenerEntrenador obtenerEntrenadores = new ObtenerEntrenador(repositorioEntre);
+
+
 creadorDePokemons.ejecutar(pokemon1);
 creadorDePokemons.ejecutar(pokemon2);
 creadorDePokemons.ejecutar(pokemon3);
 
+Console.WriteLine("-OBTENEMOS TODOS LOS POKEMONES-");
 List<PokemonDTO> pokemones = obtenerPokemones.Ejecutar();
 foreach(PokemonDTO pokemon in pokemones)
 {
@@ -65,26 +72,36 @@ pokemonDTO.Id(),
 );
 
 modificarpokemon.Ejecutar(pokemon4);
-Console.WriteLine("-");
+
+Console.WriteLine("-MODIFICAMOS 1 POKEMON-");
+
 pokemones = obtenerPokemones.Ejecutar();
 foreach (PokemonDTO pokemon in pokemones)
 {
     Console.WriteLine(pokemon.Describirse());
 }
 
-
-eliminarpokemon.Ejecutar(5);
-Console.WriteLine("-");
+/*comentado para que funcionen los otros
+eliminarpokemon.Ejecutar(2);
+Console.WriteLine("-ELIMINAMOS 1 POKEMON-");
 pokemones = obtenerPokemones.Ejecutar();
 foreach (PokemonDTO pokemon in pokemones)
 {
     Console.WriteLine(pokemon.Describirse());
 }
+*/
+//////////////////////////////////////////////////////////////////////////////
 
 List<PokemonDTO> listaPokemones1 = new List<PokemonDTO>
 {
     pokemon1,
     pokemon2
+};
+
+List<PokemonDTO> listaPokemones2 = new List<PokemonDTO>
+{
+    pokemon3,
+    pokemon1
 };
 
 EntrenadorDTO entrenador1 = new EntrenadorDTO(
@@ -102,18 +119,17 @@ EntrenadorDTO entrenador2 = new EntrenadorDTO(
  "Ciudad Roca",
  true,
  3,
- listaPokemones1
+ listaPokemones2
  );
-
-EntrenadorRepositorio repositorioEntre = new EntrenadorRepositorioEnMemoria();
-CrearEntrenador crearEntrenador = new CrearEntrenador(repositorioEntre);
-ObtenerEntrenador obtenerEntrenadores = new ObtenerEntrenador(repositorioEntre);
 
 crearEntrenador.ejecutar(entrenador1);
 crearEntrenador.ejecutar(entrenador2);
 
+Console.WriteLine("-OBTENEMOS TODOS LOS ENTRENADORES-");
 List<EntrenadorDTO> entrenadores = obtenerEntrenadores.Ejecutar();
 foreach (EntrenadorDTO entrenador in entrenadores)
 {
     Console.WriteLine(entrenador.Describirse());
 }
+
+Console.WriteLine("-MODIFICAMOS 1 ENTRENADOR-");

@@ -9,14 +9,14 @@ namespace _02_Dominio.ValueObject
 {
     public class PokemonesAtrapados
     {
-        List<PokemonesAtrapados> valor;
+        List<Pokemon> valor;
 
-        public PokemonesAtrapados(List<PokemonesAtrapados> valor)
+        public PokemonesAtrapados(List<Pokemon> valor)
         {
             this.valor = valor;
         }
 
-        public List<PokemonesAtrapados> Valor()
+        public List<Pokemon> Valor()
         {
             return this.valor;
         }

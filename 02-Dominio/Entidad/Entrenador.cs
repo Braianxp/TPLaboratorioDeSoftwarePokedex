@@ -17,7 +17,7 @@ namespace _02_Dominio.Entidad
         private Medallas medallas;
         private PokemonesAtrapados pokemonesAtrapados;
 
-        public Entrenador(Guid id, string nombre, string origen, bool liderDeGimnasio, int medallas, List<PokemonesAtrapados> pokemonesAtrapados)
+        public Entrenador(Guid id, string nombre, string origen, bool liderDeGimnasio, int medallas, List<Pokemon> pokemonesAtrapados)
         {
             this.id = new Identificador(id);
             this.nombre = new Nombre(nombre);
@@ -52,7 +52,7 @@ namespace _02_Dominio.Entidad
             return medallas.Valor();
         }
 
-        public List<PokemonesAtrapados> PokemonesAtrapados()
+        public List<Pokemon> PokemonesAtrapados()
         {
             return pokemonesAtrapados.Valor();
         }
