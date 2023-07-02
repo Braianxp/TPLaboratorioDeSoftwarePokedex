@@ -2,7 +2,9 @@
 using _01_Aplicacion.DTO;
 using _02_Dominio.Entidad;
 using _02_Dominio.Repositorio;
+using _02_Dominio.ValueObject;
 using _03_Infraestructura;
+using System.Collections.Generic;
 
 PokemonDTO pokemon1 = new PokemonDTO(
 Guid.NewGuid(),
@@ -78,3 +80,31 @@ foreach (PokemonDTO pokemon in pokemones)
 {
     Console.WriteLine(pokemon.Describirse());
 }
+
+List<PokemonDTO> listaPokemones1 = new List<PokemonDTO>
+{
+    pokemon1,
+    pokemon2
+};
+
+EntrenadorDTO entrenador1 = new EntrenadorDTO(
+ Guid.NewGuid(),
+ "Ash Ketchum",
+ "Pueblo Paleta",
+ false,
+ 5,
+ listaPokemones1
+ );
+
+EntrenadorDTO entrenador2 = new EntrenadorDTO(
+ Guid.NewGuid(),
+ "Brook",
+ "Ciudad Roca",
+ true,
+ 3,
+ listaPokemones1
+ );
+
+EntrenadorRepositorio repositorioEntre = new EntrenadorRepositorioEnMemoria();
+CrearEntrenador crearEntrenador = new CrearEntrenador(repositorioEntre);
+ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);

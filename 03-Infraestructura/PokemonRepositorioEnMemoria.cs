@@ -45,7 +45,6 @@ namespace _03_Infraestructura
 
         public void Modificar(Pokemon pokemon)
         {
-
             for (int i = 0; i < pokemones.Count; i++)
             {
                 if (pokemon.Id() == pokemones[i].Id())
@@ -78,8 +77,6 @@ namespace _03_Infraestructura
             {
                 throw new Exception("El pokemon no se elimino");
             }
-
-        }
-        
+        }        
     }
 }

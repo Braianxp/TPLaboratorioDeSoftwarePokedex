@@ -14,9 +14,9 @@ namespace _01_Aplicacion.DTO
         private string origen;
         private bool liderDeGimnasio;
         private int medallas;
-        private List<Pokemon> pokemonesAtrapados;
+        private List<PokemonDTO> pokemonesAtrapados;
 
-        public EntrenadorDTO(Guid id, string nombre, string origen, bool liderDeGimnasio, int medallas, List<Pokemon> pokemonsAtrapados)
+        public EntrenadorDTO(Guid id, string nombre, string origen, bool liderDeGimnasio, int medallas, List<PokemonDTO> pokemonsAtrapados)
         {
             this.id = id;
             this.nombre = nombre;
@@ -45,8 +45,12 @@ namespace _01_Aplicacion.DTO
         {
             return this.liderDeGimnasio;
         }
+        public int Medallas()
+        {
+            return this.medallas;
+        }
 
-        public List<Pokemon> PokemonesAtrapados()
+        public List<PokemonDTO> PokemonesAtrapados()
         {
             return this.pokemonesAtrapados;
         }
