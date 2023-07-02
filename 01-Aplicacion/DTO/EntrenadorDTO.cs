@@ -54,5 +54,8 @@ namespace _01_Aplicacion.DTO
         {
             return this.pokemonesAtrapados;
         }
+        public String Describirse()
+        {
+            return "*Entrenador:" + this.nombre + " *Origen:" + this.origen + " *Lider de gimnasio:" + this.liderDeGimnasio + " *Medallas " + this.medallas + " *Sus pokemones son " + this.pokemonesAtrapados;
     }
 }

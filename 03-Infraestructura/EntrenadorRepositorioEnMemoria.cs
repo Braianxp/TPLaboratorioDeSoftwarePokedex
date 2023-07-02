@@ -36,7 +36,7 @@ namespace _03_Infraestructura
             }
             if (entrenador == null)
             {
-                throw new Exception("El pokemon no existe");
+                throw new Exception("El entrenador no existe");
             }
 
             return entrenador;
@@ -70,7 +70,6 @@ namespace _03_Infraestructura
                     entrenadores.RemoveAt(i);
                     eliminado = true;
                 }
-
             }
             if (!eliminado)
             {

@@ -107,4 +107,13 @@ EntrenadorDTO entrenador2 = new EntrenadorDTO(
 
 EntrenadorRepositorio repositorioEntre = new EntrenadorRepositorioEnMemoria();
 CrearEntrenador crearEntrenador = new CrearEntrenador(repositorioEntre);
-ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
+ObtenerEntrenador obtenerEntrenadores = new ObtenerEntrenador(repositorioEntre);
+
+crearEntrenador.ejecutar(entrenador1);
+crearEntrenador.ejecutar(entrenador2);
+
+List<EntrenadorDTO> entrenadores = obtenerEntrenadores.Ejecutar();
+foreach (EntrenadorDTO entrenador in entrenadores)
+{
+    Console.WriteLine(entrenador.Describirse());
+}
