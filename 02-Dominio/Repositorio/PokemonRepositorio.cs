@@ -16,6 +16,8 @@ namespace _02_Dominio.Repositorio
         public Pokemon ObtenerPokemonesOrden(int orden);
 
         public void Modificar(Pokemon pokemon);
+
+        public void EliminarPokemon(int orden);
         
     }
 }

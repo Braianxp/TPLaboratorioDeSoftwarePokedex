@@ -60,6 +60,26 @@ namespace _03_Infraestructura
             }
 
         }
+
+        public void EliminarPokemon(int orden)
+        {
+            bool eliminado = false;
+            
+            for (int i = 0; i < pokemones.Count; i++)
+            {
+                if (orden == pokemones[i].Orden())
+                {
+                    pokemones.RemoveAt(i);
+                    eliminado = true;
+                }
+
+            }
+            if (!eliminado)
+            {
+                throw new Exception("El pokemon no se elimino");
+            }
+
+        }
         
     }
 }

@@ -38,6 +38,7 @@ CrearPokemon creadorDePokemons = new CrearPokemon(repositorio);
 ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
 BuscarPokemon buscarPokemon = new BuscarPokemon(repositorio);
 ModificarPokemon modificarpokemon = new ModificarPokemon(repositorio);
+EliminarPokemon eliminarpokemon = new EliminarPokemon(repositorio);
 
 creadorDePokemons.ejecutar(pokemon1);
 creadorDePokemons.ejecutar(pokemon2);
@@ -62,6 +63,15 @@ pokemonDTO.Id(),
 );
 
 modificarpokemon.Ejecutar(pokemon4);
+Console.WriteLine("-");
+pokemones = obtenerPokemones.Ejecutar();
+foreach (PokemonDTO pokemon in pokemones)
+{
+    Console.WriteLine(pokemon.Describirse());
+}
+
+
+eliminarpokemon.Ejecutar(5);
 Console.WriteLine("-");
 pokemones = obtenerPokemones.Ejecutar();
 foreach (PokemonDTO pokemon in pokemones)
