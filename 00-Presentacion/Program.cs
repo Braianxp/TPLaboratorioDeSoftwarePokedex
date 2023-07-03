@@ -6,6 +6,8 @@ using _02_Dominio.ValueObject;
 using _03_Infraestructura;
 using System.Collections.Generic;
 
+///CREAMOS LOS POKEMONES
+
 PokemonDTO pokemon1 = new PokemonDTO(
 Guid.NewGuid(),
 "Squirtle",
@@ -45,7 +47,10 @@ EliminarPokemon eliminarpokemon = new EliminarPokemon(repositorio);
 
 EntrenadorRepositorio repositorioEntre = new EntrenadorRepositorioEnMemoria();
 CrearEntrenador crearEntrenador = new CrearEntrenador(repositorioEntre);
-ObtenerEntrenador obtenerEntrenadores = new ObtenerEntrenador(repositorioEntre);
+ObtenerEntrenadores obtenerEntrenadores = new ObtenerEntrenadores(repositorioEntre);
+BuscarEntrenador buscarEntrenador = new BuscarEntrenador(repositorioEntre);
+ModificarEntrenador modificarEntrenador = new ModificarEntrenador(repositorioEntre);
+EliminarEntrenador eliminarentrenador = new EliminarEntrenador(repositorioEntre);
 
 
 creadorDePokemons.ejecutar(pokemon1);
@@ -53,6 +58,7 @@ creadorDePokemons.ejecutar(pokemon2);
 creadorDePokemons.ejecutar(pokemon3);
 
 Console.WriteLine("-OBTENEMOS TODOS LOS POKEMONES-");
+Console.WriteLine("");
 List<PokemonDTO> pokemones = obtenerPokemones.Ejecutar();
 foreach(PokemonDTO pokemon in pokemones)
 {
@@ -73,7 +79,9 @@ pokemonDTO.Id(),
 
 modificarpokemon.Ejecutar(pokemon4);
 
+Console.WriteLine("");
 Console.WriteLine("-MODIFICAMOS 1 POKEMON-");
+Console.WriteLine("");
 
 pokemones = obtenerPokemones.Ejecutar();
 foreach (PokemonDTO pokemon in pokemones)
@@ -104,6 +112,12 @@ List<PokemonDTO> listaPokemones2 = new List<PokemonDTO>
     pokemon1
 };
 
+List<PokemonDTO> listaPokemones3 = new List<PokemonDTO>
+{
+    pokemon2,
+    pokemon3
+};
+
 EntrenadorDTO entrenador1 = new EntrenadorDTO(
  Guid.NewGuid(),
  "Ash Ketchum",
@@ -125,11 +139,52 @@ EntrenadorDTO entrenador2 = new EntrenadorDTO(
 crearEntrenador.ejecutar(entrenador1);
 crearEntrenador.ejecutar(entrenador2);
 
+Console.WriteLine("");
 Console.WriteLine("-OBTENEMOS TODOS LOS ENTRENADORES-");
+Console.WriteLine("");
+
 List<EntrenadorDTO> entrenadores = obtenerEntrenadores.Ejecutar();
 foreach (EntrenadorDTO entrenador in entrenadores)
 {
     Console.WriteLine(entrenador.Describirse());
 }
 
+Console.WriteLine("");
+Console.WriteLine("-BUSCAMOS 1 ENTRENADOR-");
+Console.WriteLine("");
+
+EntrenadorDTO entrenadorDTO = buscarEntrenador.Ejecutar("Brook");
+Console.WriteLine(entrenadorDTO.Describirse());
+
+Console.WriteLine("");
 Console.WriteLine("-MODIFICAMOS 1 ENTRENADOR-");
+Console.WriteLine("");
+
+EntrenadorDTO entrenador3 = new EntrenadorDTO(
+entrenadorDTO.Id(),
+"Misty",
+"Ciudad Acuario",
+true,
+2,
+listaPokemones3
+);
+
+modificarEntrenador.Ejecutar(entrenador3);
+
+entrenadores = obtenerEntrenadores.Ejecutar();
+foreach (EntrenadorDTO entrenador in entrenadores)
+{
+    Console.WriteLine(entrenador.Describirse());
+}
+
+/*Console.WriteLine("");
+Console.WriteLine("-ELIMINAMOS 1 ENTRENADOR-");
+Console.WriteLine("");
+
+eliminarentrenador.Ejecutar("Ash Ketchum");
+
+entrenadores = obtenerEntrenadores.Ejecutar();
+foreach (EntrenadorDTO entrenador in entrenadores)
+{
+    Console.WriteLine(entrenador.Describirse());
+}*/

@@ -22,7 +22,7 @@ namespace _03_Infraestructura
             this.entrenadores.Add(entrenador);
         }
 
-        public Entrenador ObtenerEntrenadoresNombre(int nombre)
+        public Entrenador ObtenerEntrenadoresNombre(string nombre)
         {
             Entrenador entrenador = null;
 
@@ -46,7 +46,7 @@ namespace _03_Infraestructura
         {
             for (int i = 0; i < entrenadores.Count; i++)
             {
-                if (entrenador.Nombre().Equals(entrenadores[i].Nombre()))
+                if (entrenador.Id().Equals(entrenadores[i].Id()))
                 {
                     entrenadores[i] = entrenador;
                 }
@@ -59,7 +59,7 @@ namespace _03_Infraestructura
 
         }
 
-        public void EliminarEntrenador(int nombre)
+        public void EliminarEntrenador(string nombre)
         {
             bool eliminado = false;
 

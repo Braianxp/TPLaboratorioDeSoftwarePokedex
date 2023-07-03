@@ -42,3 +42,25 @@ C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSof
 C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.pdb
 C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.genruntimeconfig.cache
 C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\ref\00-Presentacion.dll
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\00-Presentacion.exe
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\00-Presentacion.deps.json
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\00-Presentacion.runtimeconfig.json
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\00-Presentacion.dll
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\00-Presentacion.pdb
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\01-Aplicacion.dll
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\02-Dominio.dll
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\03-Infraestructura.dll
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\01-Aplicacion.pdb
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\02-Dominio.pdb
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\03-Infraestructura.pdb
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.csproj.AssemblyReference.cache
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.AssemblyInfoInputs.cache
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.AssemblyInfo.cs
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.csproj.CopyComplete
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.dll
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\refint\00-Presentacion.dll
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.pdb
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.genruntimeconfig.cache
+C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\ref\00-Presentacion.dll

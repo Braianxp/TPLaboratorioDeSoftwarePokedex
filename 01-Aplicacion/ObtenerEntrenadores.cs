@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace _01_Aplicacion
 {
-    public class ObtenerEntrenador
+    public class ObtenerEntrenadores
     {
         EntrenadorRepositorio repositorio;
 
-        public ObtenerEntrenador(EntrenadorRepositorio repositorio)
+        public ObtenerEntrenadores(EntrenadorRepositorio repositorio)
         {
             this.repositorio = repositorio;
         }
