@@ -38,12 +38,13 @@ Guid.NewGuid(),
 
 
 
-PokemonRepositorio repositorio = new PokemonRepositorioEnMemoria();
-CrearPokemon creadorDePokemons = new CrearPokemon(repositorio);
-ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
-BuscarPokemon buscarPokemon = new BuscarPokemon(repositorio);
-ModificarPokemon modificarpokemon = new ModificarPokemon(repositorio);
-EliminarPokemon eliminarpokemon = new EliminarPokemon(repositorio);
+PokemonRepositorio repositorioPokemonEnMemoria = new PokemonRepositorioEnMemoria();
+PokemonRepositorio repositorioPokemonPostgreSql = new PokemonRepositorioPostgreSQL();
+CrearPokemon creadorDePokemons = new CrearPokemon(repositorioPokemonPostgreSql);
+ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorioPokemonPostgreSql);
+BuscarPokemon buscarPokemon = new BuscarPokemon(repositorioPokemonPostgreSql);
+ModificarPokemon modificarpokemon = new ModificarPokemon(repositorioPokemonPostgreSql);
+EliminarPokemon eliminarpokemon = new EliminarPokemon(repositorioPokemonPostgreSql);
 
 EntrenadorRepositorio repositorioEntre = new EntrenadorRepositorioEnMemoria();
 CrearEntrenador crearEntrenador = new CrearEntrenador(repositorioEntre);
@@ -53,7 +54,7 @@ ModificarEntrenador modificarEntrenador = new ModificarEntrenador(repositorioEnt
 EliminarEntrenador eliminarentrenador = new EliminarEntrenador(repositorioEntre);
 
 
-creadorDePokemons.ejecutar(pokemon1);
+/*creadorDePokemons.ejecutar(pokemon1);
 creadorDePokemons.ejecutar(pokemon2);
 creadorDePokemons.ejecutar(pokemon3);
 
@@ -66,7 +67,8 @@ foreach(PokemonDTO pokemon in pokemones)
 }
 
 
-PokemonDTO pokemonDTO = buscarPokemon.Ejecutar(1);
+PokemonDTO pokemonDTO = buscarPokemon.Ejecutar(7);
+//Console.WriteLine(pokemonDTO.Describirse());
 
 PokemonDTO pokemon4 = new PokemonDTO(
 pokemonDTO.Id(),
@@ -88,9 +90,9 @@ foreach (PokemonDTO pokemon in pokemones)
 {
     Console.WriteLine(pokemon.Describirse());
 }
-
-/*comentado para que funcionen los otros
-eliminarpokemon.Ejecutar(2);
+*/
+//eliminarpokemon.Ejecutar(4);
+/*
 Console.WriteLine("-ELIMINAMOS 1 POKEMON-");
 pokemones = obtenerPokemones.Ejecutar();
 foreach (PokemonDTO pokemon in pokemones)
@@ -98,8 +100,8 @@ foreach (PokemonDTO pokemon in pokemones)
     Console.WriteLine(pokemon.Describirse());
 }
 */
-//////////////////////////////////////////////////////////////////////////////
 
+/*
 List<PokemonDTO> listaPokemones1 = new List<PokemonDTO>
 {
     pokemon1,
@@ -110,7 +112,7 @@ List<PokemonDTO> listaPokemones2 = new List<PokemonDTO>
 {
     pokemon3,
     pokemon1
-};
+};*/
 
 List<PokemonDTO> listaPokemones3 = new List<PokemonDTO>
 {

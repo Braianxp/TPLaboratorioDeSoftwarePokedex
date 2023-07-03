@@ -26,6 +26,10 @@ namespace _03_Infraestructura
         public Pokemon ObtenerPokemonesOrden(int orden)
         {
             Pokemon pokemon = null;
+<<<<<<< HEAD
+=======
+
+>>>>>>> PostgreSql
 
             for (int i = 0; i < pokemones.Count; i++)
             {

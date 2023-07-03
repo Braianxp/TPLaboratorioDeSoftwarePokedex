@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "8zsFeCHQMD6GspF/kgjy6lEwjQUkb2fdyfBL0JOJkfMvk58pDGEgJUwXmmMtxbI8Y2y3QD8VydfB196EULMMbw==",
+  "dgSpecHash": "aKEc2Gb6i6KGOo0/r8UcwlAjKk+d6AleRhext9YSAwtpX0Bxv5YPgfO0hdlMBRECdKOJoBhDoXafDgmZniapqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Braian\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Braian\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\Braian\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Braian\\Desktop\\Pokedex\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

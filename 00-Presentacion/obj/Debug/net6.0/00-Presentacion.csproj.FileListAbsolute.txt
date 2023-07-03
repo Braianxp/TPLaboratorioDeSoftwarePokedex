@@ -42,6 +42,7 @@ C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSof
 C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.pdb
 C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.genruntimeconfig.cache
 C:\Users\javy_\OneDrive\Documents\Proyectos de visual\Proyecto1\LaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\ref\00-Presentacion.dll
+<<<<<<< HEAD
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\00-Presentacion.exe
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\00-Presentacion.deps.json
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\00-Presentacion.runtimeconfig.json
@@ -64,3 +65,7 @@ C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\D
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.pdb
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.genruntimeconfig.cache
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\ref\00-Presentacion.dll
+=======
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\Npgsql.dll
+>>>>>>> PostgreSql
