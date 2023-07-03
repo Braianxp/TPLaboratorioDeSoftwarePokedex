@@ -25,9 +25,8 @@ namespace _03_Infraestructura
 
         public Pokemon ObtenerPokemonesOrden(int orden)
         {
-#pragma warning disable CS8600 // Se va a convertir un literal nulo o un posible valor nulo en un tipo que no acepta valores NULL
             Pokemon pokemon = null;
-#pragma warning restore CS8600 // Se va a convertir un literal nulo o un posible valor nulo en un tipo que no acepta valores NULL
+
 
             for (int i = 0; i < pokemones.Count; i++)
             {

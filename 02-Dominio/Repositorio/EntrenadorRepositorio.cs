@@ -13,10 +13,10 @@ namespace _02_Dominio.Repositorio
 
         public List<Entrenador> ObtenerEntrenadores();
 
-        public Entrenador ObtenerEntrenadoresNombre(int nomnbre);
+        public Entrenador ObtenerEntrenadoresNombre(string nombre);
 
         public void ModificarEntrenador(Entrenador entrenador);
 
-        public void EliminarEntrenador(int nombre);
+        public void EliminarEntrenador(string nombre);
     }
 }
