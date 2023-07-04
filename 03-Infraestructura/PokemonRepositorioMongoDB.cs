@@ -65,6 +65,29 @@ namespace _03_Infraestructura
 
                 var pokemonDB = database.GetCollection<PokemonModelo>("Pokemon");
 
+                pokemonDB.FindOneAndDelete(d => d.Orden ==orden);
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex);
+            }
+        }
+
+        public void Modificar(Pokemon pokemon)
+        {
+            var settings = MongoClientSettings.FromConnectionString(connectionUri);
+            // Set the ServerApi field of the settings object to Stable API version 1
+            settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+            // Create a new client and connect to the server
+            var client = new MongoClient(settings);
+
+            try
+            {
+                var database = client.GetDatabase("Pokedex");
+
+                var pokemonDB = database.GetCollection<PokemonModelo>("Pokemon");
+
                 var pokemonModelo = new PokemonModelo()
                 {
                     Id = pokemon.Id().ToString(),
@@ -75,7 +98,7 @@ namespace _03_Infraestructura
                     Habilidad = pokemon.Habilidad()
                 };
 
-                pokemonDB.InsertOne(pokemonModelo);
+                pokemonDB.ReplaceOne(d => d.Orden == pokemonModelo.Orden, pokemonModelo);
             }
             catch (Exception ex)
             {
@@ -83,19 +106,90 @@ namespace _03_Infraestructura
             }
         }
 
-        public void Modificar(Pokemon pokemon)
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Pokemon> ObtenerPokemones()
         {
-            throw new NotImplementedException();
+            var settings = MongoClientSettings.FromConnectionString(connectionUri);
+            // Set the ServerApi field of the settings object to Stable API version 1
+            settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+            // Create a new client and connect to the server
+            var client = new MongoClient(settings);
+
+            List<Pokemon> pokemones = new List<Pokemon>();
+
+            try
+            {
+                var database = client.GetDatabase("Pokedex");
+
+                var pokemonDB = database.GetCollection<PokemonModelo>("Pokemon");
+
+                List<PokemonModelo> pokemonesModelo = pokemonDB.Find(d => true).ToList();
+
+                
+
+                foreach (var pokemonModelo in pokemonesModelo)
+                {
+                    Pokemon pokemon = new Pokemon(
+                    Guid.Parse(pokemonModelo.Id),
+                    pokemonModelo.Nombre,
+                    pokemonModelo.Orden,
+                    pokemonModelo.Tipo,
+                    pokemonModelo.Evolucion,
+                    pokemonModelo.Habilidad
+                    );
+
+                    pokemones.Add( pokemon );
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                
+                Console.WriteLine(ex);
+            }
+
+            return pokemones;
         }
 
         public Pokemon ObtenerPokemonesOrden(int orden)
         {
-            throw new NotImplementedException();
+            var settings = MongoClientSettings.FromConnectionString(connectionUri);
+            // Set the ServerApi field of the settings object to Stable API version 1
+            settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+            // Create a new client and connect to the server
+            var client = new MongoClient(settings);
+
+            Pokemon pokemon = null;
+
+            try
+            {
+                var database = client.GetDatabase("Pokedex");
+
+                var pokemonDB = database.GetCollection<PokemonModelo>("Pokemon");
+
+                List<PokemonModelo> pokemonesModelo = pokemonDB.Find(d => d.Orden == orden).ToList();
+
+                foreach (var pokemonModelo in pokemonesModelo)
+                {
+                    pokemon = new Pokemon(
+                    Guid.Parse(pokemonModelo.Id),
+                    pokemonModelo.Nombre,
+                    pokemonModelo.Orden,
+                    pokemonModelo.Tipo,
+                    pokemonModelo.Evolucion,
+                    pokemonModelo.Habilidad
+                    );
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex);
+            }
+
+            return pokemon;
         }
 
         
