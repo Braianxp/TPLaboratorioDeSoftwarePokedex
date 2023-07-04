@@ -80,7 +80,48 @@ namespace _03_Infraestructura
 
         public void ModificarEntrenador(Entrenador entrenador)
         {
-            throw new NotImplementedException();
+            try
+            {
+                conex.ConnectionString = cadenaConexion;
+                conex.Open();
+                NpgsqlCommand commandoactualizar = conex.CreateCommand();
+                commandoactualizar.CommandType = System.Data.CommandType.Text;
+                commandoactualizar.CommandText = "UPDATE entrenador SET nombre = @nombre, origen = @origen, liderdegimnasio = @liderdegimnasio, medallas = @medallas WHERE id = @id";
+                commandoactualizar.Parameters.AddWithValue("@id", entrenador.Id());
+                commandoactualizar.Parameters.AddWithValue("@nombre", entrenador.Nombre());
+                commandoactualizar.Parameters.AddWithValue("@origen", entrenador.Origen());
+                commandoactualizar.Parameters.AddWithValue("@liderdegimnasio", entrenador.Lider());
+                commandoactualizar.Parameters.AddWithValue("@medallas", entrenador.Medallas());
+                commandoactualizar.ExecuteNonQuery();
+                conex.Close();
+
+                conex.ConnectionString = cadenaConexion;
+                conex.Open();
+                NpgsqlCommand commandoeliminar = conex.CreateCommand();
+                commandoeliminar.CommandType = System.Data.CommandType.Text;
+                commandoeliminar.CommandText = "DELETE FROM entrenador_pokemon WHERE identrenador = @identrenador";
+                commandoeliminar.Parameters.AddWithValue("@identrenador", entrenador.Id());
+                commandoeliminar.ExecuteScalar();
+                conex.Close();
+
+                foreach (var pokemon in entrenador.PokemonesAtrapados())
+                {
+                    conex.ConnectionString = cadenaConexion;
+                    conex.Open();
+                    NpgsqlCommand commandoinsertar = conex.CreateCommand();
+                    commandoinsertar.CommandType = System.Data.CommandType.Text;
+                    commandoinsertar.CommandText = "INSERT INTO entrenador_pokemon(id,identrenador,idpokemon) VALUES (@id,@identrenador,@idpokemon)";
+                    commandoinsertar.Parameters.AddWithValue("@id", Guid.NewGuid());
+                    commandoinsertar.Parameters.AddWithValue("@identrenador", entrenador.Id());
+                    commandoinsertar.Parameters.AddWithValue("@idpokemon", pokemon.Id());
+                    commandoinsertar.ExecuteScalar();
+                    conex.Close();
+                }
+            }
+            catch (NpgsqlException e)
+            {
+                Console.WriteLine("No se pudo conectar a la base de datos el error es: " + e.Message);
+            }
         }
 
         public List<Entrenador> ObtenerEntrenadores()

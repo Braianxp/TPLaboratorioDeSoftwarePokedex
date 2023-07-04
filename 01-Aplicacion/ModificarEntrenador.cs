@@ -25,7 +25,7 @@ namespace _01_Aplicacion
             List<Pokemon> pokemones = new List<Pokemon>();
             for (int i = 0; i < pokemonDTO.Count; i++)
             {
-                Pokemon pokemon = new Pokemon(pokemones[i].Id(), pokemones[i].Nombre(), pokemones[i].Orden(), pokemones[i].Tipo(), pokemones[i].Evolucion(), pokemones[i].Habilidad());
+                Pokemon pokemon = new Pokemon(pokemonDTO[i].Id(), pokemonDTO[i].Nombre(), pokemonDTO[i].Orden(), pokemonDTO[i].Tipo(), pokemonDTO[i].Evolucion(), pokemonDTO[i].Habilidad());
                 pokemones.Add(pokemon);               
             }
             repositorio.ModificarEntrenador(new Entrenador(entrenador.Id(), entrenador.Nombre(), entrenador.Origen(), entrenador.Lider(), entrenador.Medallas(), pokemones));

@@ -73,7 +73,7 @@ namespace _01_Aplicacion.DTO
                 stringLiderDeGimnasio = "SI";
             }
 
-            return "*Entrenador:" + this.nombre + " *Origen:" + this.origen + " *Lider de gimnasio:" + stringLiderDeGimnasio + " *Medallas: " + this.medallas + " *Sus pokemones son:" + stringPokemones;
+            return "\n*Entrenador:" + this.nombre + " *Origen:" + this.origen + " *Lider de gimnasio:" + stringLiderDeGimnasio + " *Medallas: " + this.medallas + " *Sus pokemones son:" + stringPokemones;
         }
     }
 }
