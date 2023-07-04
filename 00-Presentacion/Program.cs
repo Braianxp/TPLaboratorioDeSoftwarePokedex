@@ -11,8 +11,9 @@ using System.Linq.Expressions;
 
 PokemonRepositorio repositorioPokemonEnMemoria = new PokemonRepositorioEnMemoria();
 PokemonRepositorio repositorioPokemonPostgreSql = new PokemonRepositorioPostgreSQL();
+PokemonRepositorio repositorioRepositorioMongoDB = new PokemonRepositorioMongoDB();
 
-CrearPokemon crearPokemon = new CrearPokemon(repositorioPokemonPostgreSql);
+CrearPokemon crearPokemon = new CrearPokemon(repositorioRepositorioMongoDB);
 ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorioPokemonPostgreSql);
 BuscarPokemon buscarPokemon = new BuscarPokemon(repositorioPokemonPostgreSql);
 ModificarPokemon modificarPokemon = new ModificarPokemon(repositorioPokemonPostgreSql);

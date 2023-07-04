@@ -46,3 +46,16 @@ C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\D
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.pdb
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\00-Presentacion.genruntimeconfig.cache
 C:\Users\javy_\source\repos\TPLaboratorioDeSoftwarePokedex\00-Presentacion\obj\Debug\net6.0\ref\00-Presentacion.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\DnsClient.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\Snappier.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Braian\Desktop\Pokedex\TPLaboratorioDeSoftwarePokedex\00-Presentacion\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
