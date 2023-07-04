@@ -13,11 +13,11 @@ PokemonRepositorio repositorioPokemonEnMemoria = new PokemonRepositorioEnMemoria
 PokemonRepositorio repositorioPokemonPostgreSql = new PokemonRepositorioPostgreSQL();
 PokemonRepositorio repositorioRepositorioMongoDB = new PokemonRepositorioMongoDB();
 
-CrearPokemon crearPokemon = new CrearPokemon(repositorioRepositorioMongoDB);
-ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorioRepositorioMongoDB);
-BuscarPokemon buscarPokemon = new BuscarPokemon(repositorioRepositorioMongoDB);
-ModificarPokemon modificarPokemon = new ModificarPokemon(repositorioRepositorioMongoDB);
-EliminarPokemon eliminarPokemon = new EliminarPokemon(repositorioRepositorioMongoDB);
+CrearPokemon crearPokemon = new CrearPokemon(repositorioPokemonPostgreSql);
+ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorioPokemonPostgreSql);
+BuscarPokemon buscarPokemon = new BuscarPokemon(repositorioPokemonPostgreSql);
+ModificarPokemon modificarPokemon = new ModificarPokemon(repositorioPokemonPostgreSql);
+EliminarPokemon eliminarPokemon = new EliminarPokemon(repositorioPokemonPostgreSql);
 
 EntrenadorRepositorio repositorioEntrenadorEnMemoria = new EntrenadorRepositorioEnMemoria();
 EntrenadorRepositorio repositorioEntrenadorPostgreSql = new EntrenadorRepositorioPostgreSQL();
