@@ -11,7 +11,7 @@ namespace _03_Infraestructura
 {
     public class PokemonRepositorioEnMemoria : PokemonRepositorio
     {
-        private List<Pokemon> pokemones = new List<Pokemon>();
+        private List<Pokemon> pokemones = new List<Pokemon>() { new Pokemon(Guid.NewGuid(), "Newtwo", 150, "Psiquico", "New", "Ataqeu psiquico")};
 
         public List<Pokemon> ObtenerPokemones()
         {

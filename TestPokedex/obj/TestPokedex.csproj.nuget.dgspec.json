@@ -1,0 +1,342 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\TestPokedex\\TestPokedex.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\00-Presentacion\\00-Presentacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\00-Presentacion\\00-Presentacion.csproj",
+        "projectName": "00-Presentacion",
+        "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\00-Presentacion\\00-Presentacion.csproj",
+        "packagesPath": "C:\\Users\\javy_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\00-Presentacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\javy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj"
+              },
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj"
+              },
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj",
+        "projectName": "01-Aplicacion",
+        "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\javy_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\javy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj",
+        "projectName": "02-Dominio",
+        "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj",
+        "packagesPath": "C:\\Users\\javy_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\javy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj",
+        "projectName": "03-Infraestructura",
+        "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj",
+        "packagesPath": "C:\\Users\\javy_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\javy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\TestPokedex\\TestPokedex.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\TestPokedex\\TestPokedex.csproj",
+        "projectName": "TestPokedex",
+        "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\TestPokedex\\TestPokedex.csproj",
+        "packagesPath": "C:\\Users\\javy_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\TestPokedex\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\javy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\00-Presentacion\\00-Presentacion.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\00-Presentacion\\00-Presentacion.csproj"
+              },
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\01-Aplicacion\\01-Aplicacion.csproj"
+              },
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\02-Dominio\\02-Dominio.csproj"
+              },
+              "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\javy_\\source\\repos\\TPLaboratorioDeSoftwarePokedex\\03-Infraestructura\\03-Infraestructura.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
