@@ -1,46 +1,88 @@
-﻿using _01_Aplicacion;
+﻿using _00_Presentacion;
+using _01_Aplicacion;
 using _01_Aplicacion.DTO;
+using _02_Dominio.Entidad;
 using _02_Dominio.Repositorio;
+using _02_Dominio.ValueObject;
 using _03_Infraestructura;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq.Expressions;
 
-PokemonDTO pokemon1 = new PokemonDTO(
-Guid.NewGuid(),
-"Squirtle",
-0007,
-"Agua",
-"Wartortle",
-"Pistola agua"
-);
+PokemonRepositorio repositorioPokemonEnMemoria = new PokemonRepositorioEnMemoria();
+PokemonRepositorio repositorioPokemonPostgreSql = new PokemonRepositorioPostgreSQL();
+PokemonRepositorio repositorioRepositorioMongoDB = new PokemonRepositorioMongoDB();
 
-PokemonDTO pokemon2 = new PokemonDTO(
-Guid.NewGuid(),
-"Bulbasaur",
-0001,
-"Planta",
-"Ivysaur",
-"Látigo cepa"
-);
+CrearPokemon crearPokemon = new CrearPokemon(repositorioPokemonPostgreSql);
+ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorioPokemonPostgreSql);
+BuscarPokemon buscarPokemon = new BuscarPokemon(repositorioPokemonPostgreSql);
+ModificarPokemon modificarPokemon = new ModificarPokemon(repositorioPokemonPostgreSql);
+EliminarPokemon eliminarPokemon = new EliminarPokemon(repositorioPokemonPostgreSql);
 
-PokemonDTO pokemon3 = new PokemonDTO(
-Guid.NewGuid(),
-"Charmander",
-0004,
-"Fuego",
-"Charmeleon",
-"Lanzallamas"
-);
-
-PokemonRepositorio repositorio = new PokemonRepositorioEnMemoria();
-CrearPokemon creadorDePokemons = new CrearPokemon(repositorio);
-ObtenerPokemones obtenerPokemones = new ObtenerPokemones(repositorio);
+EntrenadorRepositorio repositorioEntrenadorEnMemoria = new EntrenadorRepositorioEnMemoria();
+EntrenadorRepositorio repositorioEntrenadorPostgreSql = new EntrenadorRepositorioPostgreSQL();
 
 
-creadorDePokemons.ejecutar(pokemon1);
-creadorDePokemons.ejecutar(pokemon2);
-creadorDePokemons.ejecutar(pokemon3);
+CrearEntrenador crearEntrenador = new CrearEntrenador(repositorioEntrenadorPostgreSql);
+ObtenerEntrenadores obtenerEntrenadores = new ObtenerEntrenadores(repositorioEntrenadorPostgreSql);
+BuscarEntrenador buscarEntrenador = new BuscarEntrenador(repositorioEntrenadorPostgreSql);
+ModificarEntrenador modificarEntrenador = new ModificarEntrenador(repositorioEntrenadorPostgreSql);
+EliminarEntrenador eliminarEntrenador = new EliminarEntrenador(repositorioEntrenadorPostgreSql);
 
-List<PokemonDTO> pokemones = obtenerPokemones.Ejecutar();
-foreach(PokemonDTO pokemon in pokemones)
+UI uiConsola = new UiConsola();
+char opcion;
+
+do
 {
-    Console.WriteLine(pokemon.Describirse());
-}
+    opcion = uiConsola.Menu();
+    switch (opcion)
+    {
+        //pokemon
+        case '0':
+            uiConsola.RegistrarPokemon(crearPokemon);
+            break;
+
+        case '1':
+            uiConsola.BuscarPokemon(buscarPokemon);
+            break;
+
+        case '2':
+            uiConsola.ObtenerPokemones(obtenerPokemones);
+            break;
+        
+        case '3':
+            uiConsola.EliminarPokemon(eliminarPokemon);
+            break;
+       
+        case '4':
+            uiConsola.ModificarPokemon(modificarPokemon,buscarPokemon);
+            break;
+
+        //entrenador
+        case '5':
+            uiConsola.RegistrarEntrenador(crearEntrenador, obtenerPokemones);
+            break;
+
+        case '6':
+            uiConsola.BuscarEntrenador(buscarEntrenador);
+            break;
+
+        case '7':
+            uiConsola.ObtenerEntrenadores(obtenerEntrenadores);
+            break;
+
+        case '8':
+            uiConsola.EliminarEntrenador(eliminarEntrenador);
+            break;
+
+        case '9':
+            uiConsola.ModificarEntrenador(modificarEntrenador,buscarEntrenador, obtenerPokemones);
+            break;
+        
+        default:
+            uiConsola.Menu();
+            break;
+
+    }
+
+} while (opcion != 'X' || opcion != 'x');

@@ -57,7 +57,7 @@ namespace _01_Aplicacion.DTO
 
         public String Describirse()
         {
-            return "*Pokemon N°:" + this.orden + " *Nombre:" + this.nombre + " *Tipo:" + this.tipo + " *Habilidad:" + this.habilidad;
+            return "\n*Pokemon N°:" + this.orden + " *Nombre:" + this.nombre + " *Tipo:" + this.tipo + " *Habilidad:" + this.habilidad;
         }
     }
 }
